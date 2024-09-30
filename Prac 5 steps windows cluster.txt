@@ -1,0 +1,43 @@
+Implementation of cluster on windows server
+
+OpenVMWare->CreateanewVirtualMachine
+Choose typical-> choose iso windows server file
+Enter product key (no passsword) and next
+Enter name and select location
+Enter disk size 90gb->store virtual disc as single file
+Click customize-> 2048 in memory -> stat setup installation
+
+Now server manager will open
+VM -> Ctrl+alt+del
+Switch user and again Ctrl+Alt+Del
+Switch User->Administrator->OK
+Set a passowrd and click ok
+/////////////////////////////////////////////////////////////////
+In server mnager-> Manage->Add role and features.
+
+- Uncheck skip page
+-Role based or feature based installation
+-Select a server from server pool
+-DHCP/DNS/Active directory domain services
+-Failover clustering/group policy maangement
+-tick include management tools->add features.
+
+-Go to VM->Removable devices->CD/DVD->Connect
+
+-Specify an alternate source file-> go to drive and go to sxs file->paste file path->ok
+
+-Click Install-after install close
+
+Go to AD/DS->
+
+-Click on more ->proimote this server to domain
+-> ADD a new forest->enter admin password of before
+-uncheck DNS delegation
+-Wait for RJCOLLEGE domain->next->next->install
+/////////////////////////////////////////////////////////////////////
+Tools->Failure cluster manager
+Create cluster->click browse-> click advanced->find now->OK
+Give server name-> no select only->click next->Finish
+
+
+

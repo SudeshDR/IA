@@ -1,0 +1,26 @@
+Prac 7 VMWare ESXI server and vsphere client
+
+ Open VMWare-> Click on Create a New Virtual Machine
+ Select Typical-> CLick on Next
+Select the .iso image file esxi file->next ->name->60gb->store as single file
+->Power on after creation
+Press enter->F11->Enter
+Press root123,root123 as password, note down ip address
+Enter password->restart host
+
+
+install vsphere
+change dest folder to same as above vm
+enter ip address and root123
+login->click install certificate->ignore
+Click inventory->:configuration
+right click on datastore->brwose datastore
+Upload file(green symbol)->VXPOL  file
+Right click on ipaddress->new virtual machine
+Select custom->click next->rename->select datastore->virtual machine 8->windows xp professional 32 bit
+->memory size 1gb->VMWare paravirtual->create new virtual disk->8gb->thin provision->data store1->ok-.
+next->IDE->Edit virtual machine before completion
+
+click on machine->power->power on
+Edit settings->hardwre->CD/DVD->datastore isofile->WXPOL->ok
+

@@ -1,0 +1,18 @@
+ OpenHyper-Vmanager.
+
+SelectExternal connectiontypeandclickcreatevirtualmachine.
+
+Givethenametoyourvirtualmachineandclickonapply.
+
+click on yes->ok
+
+Click on server new machine->next
+
+give name->generation 1->512 mb->connection MSCIT
+
+Create a virtual hard disk->127gb->install an OS from bootable->iso file
+
+Finish
+
+Right click ->connect
+
